@@ -27,7 +27,7 @@ pub(crate) struct AudioHandles {
 }
 
 fn init_audio(mut commands: Commands, audio_assets: Res<AudioAssets>, audio: Res<Audio>) {
-    audio.pause();
+    // audio.pause();
     let handle = audio
         .play(audio_assets.walking.clone())
         .looped()
