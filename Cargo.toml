@@ -24,6 +24,7 @@ tracing = ["bevy/trace_chrome"]
 version = "0.13"
 features = [
     "jpeg",
+    "wav",
 ]
 
 [dependencies]

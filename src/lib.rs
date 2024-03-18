@@ -11,6 +11,7 @@
 //! The docs are organized such that you can click through the plugins to explore the systems at play.
 
 use bevy::prelude::*;
+
 mod bevy_config;
 #[cfg(feature = "dev")]
 mod dev;
@@ -54,19 +55,21 @@ pub struct GamePlugin;
 
 impl Plugin for GamePlugin {
     fn build(&self, app: &mut App) {
-        app.init_state::<GameState>().add_plugins((
-            bevy_config::plugin,
-            menu::plugin,
-            movement::plugin,
-            player_control::plugin,
-            world_interaction::plugin,
-            level_instantiation::plugin,
-            file_system_interaction::plugin,
-            shader::plugin,
-            ingame_menu::plugin,
-            particles::plugin,
-            #[cfg(feature = "dev")]
-            dev::plugin,
-        ));
+        app
+            .init_state::<GameState>()
+            .add_plugins((
+                bevy_config::plugin,
+                menu::plugin,
+                movement::plugin,
+                player_control::plugin,
+                world_interaction::plugin,
+                level_instantiation::plugin,
+                file_system_interaction::plugin,
+                shader::plugin,
+                ingame_menu::plugin,
+                particles::plugin,
+                #[cfg(feature = "dev")]
+                    dev::plugin,
+            ));
     }
 }

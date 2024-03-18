@@ -33,6 +33,50 @@ pub(super) fn plugin(app: &mut App) {
 pub(crate) struct AudioAssets {
     #[asset(key = "audio_walking")]
     pub(crate) walking: Handle<AudioSource>,
+    #[asset(key = "drum_cabasa")]
+    pub(crate) drum_cabasa: Handle<AudioSource>,
+    #[asset(key = "drum_clap")]
+    pub(crate) drum_clap: Handle<AudioSource>,
+    #[asset(key = "drum_cowbell")]
+    pub(crate) drum_cowbell: Handle<AudioSource>,
+    #[asset(key = "drum_crash_one")]
+    pub(crate) drum_crash_one: Handle<AudioSource>,
+    #[asset(key = "drum_crash_two")]
+    pub(crate) drum_crash_two: Handle<AudioSource>,
+    #[asset(key = "drum_hihat")]
+    pub(crate) drum_hihat: Handle<AudioSource>,
+    #[asset(key = "drum_kick")]
+    pub(crate) drum_kick: Handle<AudioSource>,
+    #[asset(key = "drum_ophat")]
+    pub(crate) drum_ophat: Handle<AudioSource>,
+    #[asset(key = "drum_shaker")]
+    pub(crate) drum_shaker: Handle<AudioSource>,
+    #[asset(key = "drum_ride")]
+    pub(crate) drum_ride: Handle<AudioSource>,
+    #[asset(key = "drum_sidestick")]
+    pub(crate) drum_sidestick: Handle<AudioSource>,
+    #[asset(key = "drum_snare")]
+    pub(crate) drum_snare: Handle<AudioSource>,
+    #[asset(key = "drum_tambourine")]
+    pub(crate) drum_tambourine: Handle<AudioSource>,
+    #[asset(key = "drum_tom_hi")]
+    pub(crate) drum_tom_hi: Handle<AudioSource>,
+    #[asset(key = "drum_tom_lo")]
+    pub(crate) drum_tom_lo: Handle<AudioSource>,
+    #[asset(key = "drum_tom_mid")]
+    pub(crate) drum_tom_mid: Handle<AudioSource>,
+    #[asset(key = "guitar_chug_c")]
+    pub(crate) guitar_chug_c: Handle<AudioSource>,
+    #[asset(key = "acid_long_c")]
+    pub(crate) acid_long_c: Handle<AudioSource>,
+    #[asset(key = "acid_short_c")]
+    pub(crate) acid_short_c: Handle<AudioSource>,
+    #[asset(key = "bass_c")]
+    pub(crate) bass_c: Handle<AudioSource>,
+    #[asset(key = "fxpad_c")]
+    pub(crate) fxpad_c: Handle<AudioSource>,
+    #[asset(key = "lead_c")]
+    pub(crate) lead_c: Handle<AudioSource>,
 }
 
 #[derive(AssetCollection, Resource, Clone)]
